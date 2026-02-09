@@ -88,7 +88,6 @@ This will open the Expo Dev Tools in your terminal showing a QR code and several
 # Full setup from scratch
 node -v                                  # Verify Node.js
 npm -v                                   # Verify npm
-npm install -g expo-cli                  # Install Expo CLI
 npx create-expo-app@latest my-app       # Create project
 cd my-app                                # Enter project folder
 npx expo start                           # Start dev server
