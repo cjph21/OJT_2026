@@ -26,10 +26,10 @@ Both commands should print version numbers.
 
 ## Step 2: Install Expo CLI
 
-Install the Expo CLI globally using npm:
+Expo now recommends using `npx` instead of installing the CLI globally. This ensures you always use the latest version without relying on old dependencies.
 
 ```bash
-npm install -g expo-cli
+npx create-expo-app@latest my-app
 ```
 
 Verify it was installed:
@@ -38,34 +38,7 @@ Verify it was installed:
 expo --version
 ```
 
----
-
-## Step 3: Create a New Expo Project
-
-Run the following command to create a new project using the default Expo template:
-
-```bash
-npx create-expo-app@latest my-app
-```
-
-Replace `my-app` with your desired project name.
-
-You can also choose a specific template:
-
-```bash
-npx create-expo-app@latest my-app --template blank
-```
-
-Common templates:
-| Template | Description |
-|---|---|
-| `blank` | Minimal setup with no navigation |
-| `blank-typescript` | Blank template with TypeScript configured |
-| `tabs` | Includes bottom tab navigation |
-
----
-
-## Step 4: Navigate into the Project
+## Step 3: Navigate into the Project
 
 ```bash
 cd my-app
@@ -73,7 +46,7 @@ cd my-app
 
 ---
 
-## Step 5: Install Dependencies
+## Step 4: Install Dependencies
 
 Dependencies are installed automatically when you create the project. If needed, you can reinstall them with:
 
@@ -83,7 +56,7 @@ npm install
 
 ---
 
-## Step 6: Start the Development Server
+## Step 5: Start the Development Server
 
 ```bash
 npx expo start
@@ -97,7 +70,7 @@ This will open the Expo Dev Tools in your terminal showing a QR code and several
 
 ---
 
-## Step 7: Run on a Physical Device
+## Step 6: Run on a Physical Device
 
 1. Install the **Expo Go** app on your phone:
    - [Android - Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
